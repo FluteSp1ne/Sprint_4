@@ -15,9 +15,9 @@ public class AboutRent {
     private By rentalPeriodField = By.xpath(".//div[text() = '* Срок аренды']");//Поле "Срок аренды"
     private By colorScooterBlackBox = By.id("black");//Чек-бокс "Чёрный жемчуг
     private By commentForCourierField = By.xpath(".//input[@placeholder = 'Комментарий для курьера']");//Поле "Комментарий"
-    private By orderButton = By.xpath(".//button[@class = 'Button_Button__ra12g']");//Кнопка "Заказать"
+    private By orderButton = By.xpath("//*/div[3]/button[2]");//Кнопка "Заказать"
     private By confirmButton = By.xpath(".//button[text() = 'Да']");//Кнопка "Да"
-    private By orderText = By.cssSelector(".Order_Text__2broi");//Текст заказа
+    private By orderText = By.xpath(".//button[text() = 'Посмотреть статус']");//Текст заказа
     private By calendar = By.xpath(".//div[text() = '5']");//Календарь
     private By renta = By.xpath(".//div[text() = 'сутки']");//Выбор срока аренды
 
